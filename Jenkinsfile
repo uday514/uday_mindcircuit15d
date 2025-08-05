@@ -22,7 +22,7 @@ pipeline {
         stage('DEPLOY') {
             steps {
                 echo 'In this stage .war artiface will be deployed on to tomcat '
-				deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://54.91.227.106:8081/')], contextPath: 'devops-app', war: '**/*.war'
+				deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://23.20.54.94:8081/')], contextPath: 'devops-app', war: '**/*.war'
 				
             }
         }		
